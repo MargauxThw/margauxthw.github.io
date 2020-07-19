@@ -435,7 +435,7 @@ nav a:hover {
 }
 
 /* Larger than desktop */
-@media (min-width: 800px) {
+@media (min-width: 895px) {
   .card {
     flex-direction: row;
   }
@@ -512,7 +512,7 @@ h6 {
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 895px) {
   h1 {
     font-size: 8.0rem;
   }
@@ -596,7 +596,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-@media (max-width: 595px) {
+@media (max-width: 895px) {
 
   h1,
   h2 {
