@@ -441,8 +441,7 @@ nav a:hover {
   }
 
   .card img {
-    /* height: auto; */
-    width: 450px;
+    width: 45rem;
     padding: 2% 0 2% 2%;
   }
 
@@ -453,6 +452,14 @@ nav a:hover {
   }
 
 }
+
+@media (min-width: 1200px) {
+	.card img {
+		/* height: auto; */
+		width: 450px;
+	  }
+}
+
 
 
 /* Typography
