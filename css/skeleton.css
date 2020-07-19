@@ -422,8 +422,8 @@ nav a:hover {
 /* Tablet to windowed desktop*/
 @media (min-width: 600px) {
   .card img {
-	width: 40%;
-	/* height: auto; */
+	width: 240px;
+	height: auto;
   }
 
   .card h2,
@@ -441,7 +441,7 @@ nav a:hover {
   }
 
   .card img {
-    /* height: auto; */
+    height: auto;
     width: 70%;
     padding: 2% 0 2% 2%;
   }
