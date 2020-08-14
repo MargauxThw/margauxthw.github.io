@@ -15,7 +15,12 @@
     right:0;
     padding:25px 50px;
     opacity:0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
   }
   .arrow{
     border: solid black;
@@ -54,96 +59,46 @@
       }
   
   
-  /*Select every element*/
-  [id^="item"] {
-    display: none;
-  }
-  
   .item-1 {
-    z-index: 2;
-    opacity: 1;
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_01.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-2 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_02.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-3 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_03.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-4 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_04.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
   
   .item-5 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_05.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-6 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_06.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-7 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_07.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-8 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_08.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-9 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_09.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
 
   .item-10 {
     background-image:url('../images/ZenDen/ZenDen-Sensitising/Page_Page_10.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
   }
+
   
-  *:target ~ .item-1 {
-      opacity: 0;
-    }
-  
-  #item-1:target ~ .item-1 {
-      opacity: 1;
-    }
-  
-  #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4,
-  #item-5:target ~ .item-5, #item-6:target ~ .item-6, #item-7:target ~ .item-7,
-  #item-8:target ~ .item-8, #item-9:target ~ .item-9, #item-10:target ~ .item-10  {
-      z-index: 3;
-      opacity: 1;
-    }
   
   
