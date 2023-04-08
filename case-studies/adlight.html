@@ -14,11 +14,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
-  <link rel="stylesheet" href="../css/zendencarousel.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <!-- js
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,242 +35,202 @@
 
 </head>
 
-<body>
+<body class="case-study">
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="fill">
-      <h6 style="text-align: left">
-        <a href="../">HOME</a> //
-        <a href="../about">ABOUT</a> //
-        <a href="../projects">PROJECTS</a>
-      </h6>
-    </div>
+  <nav>
+    <div id="nav-row">
+      <div id="nav-links">
+        <a href="/main#home" class="nav-home">Home</a>
+        <a href="/main#side-projects" class="nav-other">Side Projects</a>
+        <a href="/main#design-case-studies" class="nav-other">Design Case Studies</a>
+        <a href="/main#about" class="nav-other">About</a>
+      </div>
+      <button onclick="javascript:window.open('../files/MargauxThwaites_OnlineResume.pdf', '_blank');" download>Download
+        Resume</button>
   </nav>
 
-  <div class="container">
+  <section>
+    <h2>Design Case Study</h2>
+    <h1>adLight - Smart Bike Light</h1>
+    <h5 style="margin-top: 0;">Skills -- 3D modelling, Interactive Product Design & Visual Design</h5>
+  </section>
 
-    <!-- Top Heading -->
-    <div class="row" style="margin-top: 10rem">
-      <div class="twelve columns">
-        <h1>adLight - Smart Bike Light</h1>
-        <h5 style="padding-bottom: 2%; margin-bottom: 1rem;">Skills -- 3D modelling, Interactive Product Design & Visual
-          Design</h3>
+  <section>
+    <h2>Part 1/4</h2>
+    <h3>An overview</h3>
+    <p><strong>AdLight was an arduino-powered physical computing project I worked on during the second semester of
+        2018</strong>. The
+      project was made as part of a
+      joint assessment across two core units of USYD's Bachelor of Design Computing. These were Physical Computing
+      (<a href="https://sydney.edu.au/courses/units-of-study/2020/deco/deco1013.html">DECO1013</a>) &
+      3D Modelling and Fabrication (<a
+        href="https://sydney.edu.au/courses/units-of-study/2020/deco/deco1008.html">DECO1008</a>).
+    </p>
+
+    <p><strong>This was a group project</strong>. I worked in a group of four comprising of <a
+        href="https://griffenedge.com/">Griffen Edge</a>, Christian Cerda, Ebony McCue-Shore and myself.</p>
+
+    <p>
+      Our task was to develop a motion-activated device using physical computing techniques and design processes.
+      The device had to be a functional and interactive prototype at a 1:1 scale. The solution had to make use of
+      changes in pitch, roll, and yaw, that make up the three axes of the accelerometer contained in the IMU sensor
+      (Inertial Measurement Unit) on the Arduino genuine 101 board.
+    </p>
+  </section>
+
+  <section>
+    <h2>Part 2/4</h2>
+    <h3>The problem</h3>
+    <p>By researching the popularity of cycling we found that <strong>Australians are now cycling less often and for
+        less
+        time than we were in 2011</strong>. This is a problem area that negatively affects the environment and the
+      health of
+      our population.<br><br>
+      There are plenty of bike safety accessories on the market which <strong>aim to promote ridership by
+        enhancing safety</strong>. We researched some of these that made use of motion sensors, including
+      <strong>the Hövding</strong> (an
+      inflatable airbag inflates in the event of a motion-detected crash), <strong>the Garmin Varia</strong> (lights
+      that use sensors
+      to adjust beam intensity and hence save battery while riding), and <strong>the RTL510</strong> (uses radar to
+      provide visual
+      and audible alerts to riders and drivers). However, these products and similar ones on the market are sold at
+      prohibitive prices for students and casual riders, limiting their usefulness for these user groups.
+    </p>
+  </section>
+
+  <section>
+    <h2>Part 3/4</h2>
+    <h3>The solution</h3>
+    <p>Our approach, to a solution for the problem of declining ridership among Australians, was to create a product
+      that <strong>focused on safety, affordability and convenience</strong>. By helping to make safety while riding
+      easier and more
+      accessible, we hoped to improve ridership by enhancing the quality of each and every ride. <br><br>
+      For the outcomes of the project we had several deliverables to craft. These included a functioning prototype
+      using the Arduino Genuino 101 board, which had to be mounted in a 3D printed casing that we would design using
+      3ds max. Along with a video demonstration and a poster, we also had to create a VR scene (using 3ds max and
+      Unity) which reflected a usage scenario for our product.
+    </p>
+
+    <h4>Interaction model</h4>
+    <p>As part of the programming of the Arduino Genuino 101 board to respond to motion and user input, my role was
+      to create the interaction model. <strong>Shown below, this model maps out the logic of the program and the
+        task flow that a user would traverse when using the adLight</strong>.</p>
+    <img src="../images/adLight/Interaction_Model.png"
+      alt="Flowchart depicting the decision tree of interactions with the adLight" class="case-img">
+
+    <h4>Physical model</h4>
+    <div class="row">
+      <div class="three columns">
+        <img src="../images/adLight/clamp_1.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/bottom_1.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/bottom_2.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/top_1.JPG" alt="" class="case-img">
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        <img src="../images/adLight/Together_1.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/Together_2.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/Assembled_1.JPG" alt="" class="case-img">
+      </div>
+      <div class="three columns">
+        <img src="../images/adLight/Assembled_2.JPG" alt="" class="case-img">
       </div>
     </div>
 
-    <div style="border-bottom: 2px solid #009999; padding-top: 1rem"></div>
+    <h4>Explanatory video</h4>
+    <div
+      style="margin: 0 auto 3% auto; display: block; position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 
-    <!-- Overview -->
-    <div class="row" style="padding: 5% 0 0 0">
-      <div class="twelve columns">
-        <h3>An overview</h3>
-        <p><strong>AdLight was an arduino-powered physical computing project I worked on during the second semester of
-            2018</strong>. The
-          project was made as part of a
-          joint assessment across two core units of USYD's Bachelor of Design Computing. These were Physical Computing
-          (<a href="https://sydney.edu.au/courses/units-of-study/2020/deco/deco1013.html">DECO1013</a>) &
-          3D Modelling and Fabrication (<a
-            href="https://sydney.edu.au/courses/units-of-study/2020/deco/deco1008.html">DECO1008</a>).
-        </p>
-
-        <p><strong>This was a group project</strong>. I worked in a group of four comprising of <a
-            href="https://griffenedge.com/">Griffen Edge</a>, Christian Cerda, Ebony McCue-Shore and myself.</p>
-
-        <p>
-          Our task was to develop a motion-activated device using physical computing techniques and design processes.
-          The device had to be a functional and interactive prototype at a 1:1 scale. The solution had to make use of
-          changes in pitch, roll, and yaw, that make up the three axes of the accelerometer contained in the IMU sensor
-          (Inertial Measurement Unit) on the Arduino genuine 101 board.
-        </p>
-        <br>
-      </div>
+      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/2Rv22xMiSu4" frameborder="0" allowfullscreen></iframe>
     </div>
 
-
-    <div style="border-bottom: 2px solid #009999; padding-top: 1rem"></div>
-
-    <!-- The Problem -->
-    <div class="row" style="padding: 5% 0 0 0">
-
-      <div class="twelve columns">
-        <h3>The problem</h3>
-        <p>By researching the popularity of cycling we found that <strong>Australians are now cycling less often and for
-            less
-            time than we were in 2011</strong>. This is a problem area that negatively affects the environment and the
-          health of
-          our population.<br><br>
-          There are plenty of bike safety accessories on the market which <strong>aim to promote ridership by
-            enhancing safety</strong>. We researched some of these that made use of motion sensors, including
-          <strong>the Hövding</strong> (an
-          inflatable airbag inflates in the event of a motion-detected crash), <strong>the Garmin Varia</strong> (lights
-          that use sensors
-          to adjust beam intensity and hence save battery while riding), and <strong>the RTL510</strong> (uses radar to
-          provide visual
-          and audible alerts to riders and drivers). However, these products and similar ones on the market are sold at
-          prohibitive prices for students and casual riders, limiting their usefulness for these user groups.
-        </p>
-        <br>
+    <h4>VR scene</h4>
+    <div class="row" style="border-bottom: 2px solid black; border-top: 2px solid black;">
+      <div class="six columns">
+        <img src="../images/adLight/VR_model1.JPG" alt="View of the VR scene assembled in 3ds max with no shading"
+          class="case-img">
+      </div>
+      <div class="six columns">
+        <img src="../images/adLight/VR_model2.JPG" alt="View of the VR scene assembled in 3ds max with no shading"
+          class="case-img">
       </div>
     </div>
+    <div style="margin: 0 auto; display: block; position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 
-    <div style="border-bottom: 2px solid #009999; padding-top: 1rem"></div>
-
-    <!-- The Solution -->
-    <div class="row" style="padding: 5% 0 0 0">
-
-      <div class="twelve columns">
-        <h3>The solution</h3>
-        <p>Our approach, to a solution for the problem of declining ridership among Australians, was to create a product
-          that <strong>focused on safety, affordability and convenience</strong>. By helping to make safety while riding
-          easier and more
-          accessible, we hoped to improve ridership by enhancing the quality of each and every ride. <br><br>
-          For the outcomes of the project we had several deliverables to craft. These included a functioning prototype
-          using the Arduino Genuino 101 board, which had to be mounted in a 3D printed casing that we would design using
-          3ds max. Along with a video demonstration and a poster, we also had to create a VR scene (using 3ds max and
-          Unity) which reflected a usage scenario for our product.
-        </p>
-        <h5>Interaction model</h5>
-        <p>As part of the programming of the Arduino Genuino 101 board to respond to motion and user input, my role was
-          to create the interaction model. <strong>Shown below, this model maps out the logic of the program and the 
-            task flow that a user would traverse when using the adLight</strong>.</p>
-        <img src="../images/adLight/Interaction_Model.png"
-          alt="Flowchart depicting the decision tree of interactions with the adLight"
-          style="width: 100%; height: auto; margin: 3% auto 3%; display: block">
-
-        <h5>Physical model</h5>
-        <p>Under construction...</p>
-
-      </div>
+      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/5gh1xZ6dUTY" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="row" style="padding-bottom: 3%;">
+    <h4>Presenting and a prize</h4>
+    <p>As part of the design showcase for this project, I created a poster showing off the adLight. Combining this
+      with our other design artefacts (the explanatory video, immersive 3D scene, prototype models and the final
+      model) we presented our solution. The showcase was attended by our peers, a panel of judges and members of
+      the community. At the end of the day awards were given and <strong>we took out the major prize for best
+        product
+        design</strong>, in a class of over 150 students.</p>
 
-      <div class="three columns">
-        <img src="../images/adLight/clamp_1.JPG" alt="" style="width: 100%; height: auto; display: block;  padding-top:5%">
+    <div class="row">
+      <div class="six columns">
+        <img src="../images/adLight/Poster_small.png" alt="" class="case-img">
       </div>
-      <div class="three columns">
-        <img src="../images/adLight/bottom_1.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
+      <div class="six columns">
+        <img src="../images/adLight/Stall_small.png" alt="" class="case-img">
       </div>
-      <div class="three columns">
-        <img src="../images/adLight/bottom_2.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
-      <div class="three columns">
-        <img src="../images/adLight/top_1.JPG" alt="" style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
-
     </div>
+  </section>
 
-    <div class="row" style="padding-bottom: 3%;">
+  <section>
+    <h2>Part 4/4</h2>
+    <h3>Check out my other design case study</h3>
+    <p>You won’t find my most recent professional UX work here just yet. However, I’ve kept these case studies from
+      my university days on here in case you’re a current student looking for ✨inspo✨</p>
 
-      <div class="three columns">
-        <img src="../images/adLight/Together_1.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
-      <div class="three columns">
-        <img src="../images/adLight/Together_2.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
-      <div class="three columns">
-        <img src="../images/adLight/Assembled_1.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
-      <div class="three columns">
-        <img src="../images/adLight/Assembled_2.JPG" alt=""
-          style="width: 100%; height: auto; display: block;  padding-top:5%">
-      </div>
+    <div class="card-list">
+      <!-- Zen Den -->
+      <div class="card">
+        <div class="image" style="background-color: #BB261A;">
+          <img src="../images/Zenden_cover.png" alt="zhezhi and people on red background">
+        </div>
+        <div class="main-panel">
+          <div class="top-panel">
 
+            <div class="title-row">
+              <div class="title-col">
+                <h5>UX Research, UX Design, Journey Mapping, Animation</h5>
+                <h4>The Zen Den</h4>
+              </div>
+            </div>
+            <p class="project-bio">A project looking at improving the museum experiences of Young Adults
+              using
+              emerging technologies.</p>
+          </div>
+          <div class="project-links">
+            <button onclick="window.location.href='../case-studies/the-zen-den'">Read Case Study</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="row" style="padding-bottom: 3%;">
-
-      <div class="twelve columns">
-
-        <h5>Explanatory video</h5>
-        <p>Under construction...</p>
-        <div
-          style="margin: 0 auto 3% auto; display: block; position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/2Rv22xMiSu4" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <h5>VR scene</h5>
-        <p>Under construction...</p>
-        <div
-          style="margin: 0 auto 1% auto; display: block; position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/5gh1xZ6dUTY" frameborder="0" allowfullscreen></iframe>
-        </div>
+  <footer>
+    <p>🍿 Designed and <a href="https://github.com/MargauxThw/margauxthw.github.io" target="_blank">coded</a> by Margaux
+      Thwaites | Last updated: <strong>April 2023</strong></p>
+  </footer>
 
 
-      </div>
-
-      <div class="row" style="padding-bottom: 3%;">
-
-        <div class="six columns">
-          <img src="../images/adLight/VR_model1.JPG" alt="View of the VR scene assembled in 3ds max with no shading"
-            style="width: 100%; height: auto; display: block;  padding-top:5%">
-        </div>
-        <div class="six columns">
-          <img src="../images/adLight/VR_model2.JPG" alt="View of the VR scene assembled in 3ds max with no shading"
-            style="width: 100%; height: auto; display: block; float: right; padding-top: 5%">
-        </div>
-
-      </div>
-
-
-      <div class="row">
-        <div class="twelve columns">
-
-          <h5>Presenting and a prize</h5>
-          <p>As part of the design showcase for this project, I created a poster showing off the adLight. Combining this
-            with our other design artefacts (the explanatory video, immersive 3D scene, prototype models and the final
-            model) we presented our solution. The showcase was attended by our peers, a panel of judges and members of
-            the community. At the end of the day awards were given and <strong>we took out the major prize for best
-              product
-              design</strong>, in a class of over 150 students.</p>
-
-        </div>
-      </div>
-
-      <div class="row" style="padding-bottom: 3%;">
-
-        <div class="six columns">
-          <img src="../images/adLight/Poster_small.png" alt="" style="width: 100%; height: auto; display: block; ">
-        </div>
-        <div class="six columns">
-          <img src="../images/adLight/Stall_small.png" alt="" style="width: 100%; height: auto; display: block; ">
-        </div>
-
-      </div>
-
-
-      <div style="border-bottom: 2px solid black;"></div>
-
-      <h3 style="padding-top: 2rem">Check out my next project</h3>
-
-      <!-- Zen Den Card -->
-      <div class="card zen-den">
-        <img src="../images/zenden_cover-red.svg" alt="Zen Den Preview Illustration">
-        <div class="text">
-          <h2><strong>The Zen Den</strong></h2>
-          <h6>UX Research | UX Design | Animation | Video Production</h6>
-          <p>A project looking at improving the museum experiences of Young Adults using emerging
-            technologies.</p>
-          <a href="../case-studies/the-zen-den"><button>View Project</button></a>
-        </div>
-      </div>
-
-      <footer>
-        <p style="padding-top: 2%">Designed and coded by Margaux Thwaites - 2020</p>
-      </footer>
-
-    </div>
-
-    <!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
