@@ -3,9 +3,14 @@
 .carousel-wrapper {
   height: 0;
   position: relative;
-  padding-top: 50%;
+  /* padding-top: 50%; */
   width: 85%;
   margin: 0 auto;
+  height: 500px;
+  padding-bottom: 100px;
+  /* height: fit-content; */
+
+
 }
 
 .carousel-item {
@@ -22,6 +27,10 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
+
+  margin: 50px 0;
+  height: 500px;
+
 }
 
 .arrow-prev {
@@ -30,6 +39,7 @@
   top: 40%;
   color: black;
   font-size: 5rem;
+  text-decoration: none;
 }
 
 .arrow-next {
@@ -38,7 +48,7 @@
   top: 40%;
   color: black;
   font-size: 5rem;
-
+  text-decoration: none;
 }
 
 .arrow:hover {
@@ -62,6 +72,7 @@
 .light {
   color: white;
 }
+
 
 @media (max-width: 480px) {
 
