@@ -3,99 +3,285 @@
 
 <head>
 
-  <!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Margaux Thwaites | Portfolio</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>Portfolio | Margaux Thwaites</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
+    <!-- Fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Favicon
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/Margaux_favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/Margaux_favicon.png">
 
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="fill">
-      <h6 style="text-align: left">
-        <a href="/" class="nav-active">HOME</a> //
-        <a href="about">ABOUT</a> //
-        <a href="projects">PROJECTS</a>
-      </h6>
-    </div>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="nav-row">
+            <div id="nav-links">
+                <a href="#home" class="nav-home">Home</a>
+                <a href="#side-projects" class="nav-other">Side Projects</a>
+                <a href="#design-case-studies" class="nav-other">Design Case Studies</a>
+                <a href="#about" class="nav-other">About</a>
+            </div>
+            <button onclick="javascript:window.open('files/MargauxThwaites_OnlineResume.pdf', '_blank');"
+                download>Download Resume</button>
+    </nav>
 
-  <!-- Start of Grid -->
-  <div class="container">
+    <section id="home">
+        <h2>Home</h2>
+        <h3>Hi, I'm Margaux</h3>
+        <p>Welcome to my portfolio, thanks for stopping by 😎</p>
+    </section>
 
-    <!-- Top Heading -->
-    <div class="row" style="margin-top: 10rem; text-align: left">
-      <div class="twelve columns">
-        <h2 style="margin-bottom: 0">Hi, my name is </h2>
-        <h1 style="margin-top: 0; margin-bottom: 1rem">Margaux Thwaites.</h1>
-      </div>
-    </div>
+    <section id="side-projects">
+        <h2>Side Projects</h2>
+        <h3>Things I’ve made</h3>
+        <p>In my spare time I like to code up little side projects. Recently, I’ve been trying to improve my UX
+            workflow by creating <a href="https://www.figma.com/@figmargaux" target="_blank">FigJam plugins</a> to use
+            at work. I also
+            have a couple of music-themed sites that I initially created in lockdown times that still get used (which is
+            cool!).</p>
+        <div class="card-list">
 
+            <!-- Sticky Tags -->
+            <div class="card">
+                <div class="image">
+                    <img src="images/StickyTags-cover.svg" alt="Sticky Tags FigJam plugin cover image">
+                </div>
+                <div class="main-panel">
 
-    <!-- Info sneak peek box -->
-    <div class="row"
-      style="border-radius: 2px; margin-top: 4%; text-align: left; background-color: black; color: white; padding: 3% 3% 0 3%">
-      <div class="twelve columns about-me">
-        <h3 style="text-align: left;">I'm currently studying Design Computing + Computer Science.</h3>
-        <a class="button" style="margin-bottom: 4%; float: right;" href="about">See more about me</a>
-      </div>
-    </div>
+                    <div class="top-panel">
 
-    <!-- Leading into project cards -->
-    <div class="row"
-      style="margin: 2% 0 3% 0; text-align: left; background-color: white; color: black; padding-top: 4%">
-      <div class="twelve columns">
-        <h4>Check out what I've been working on...</h4>
-      </div>
-    </div>
+                        <div class="title-row">
+                            <img src="images/StickyTags-icon.png" alt="Sticky Tags FigJam plugin icon">
+                            <div class="title-col">
+                                <h5>Javascript, HTML, CSS</h5>
+                                <h4>Sticky Tags</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">Sticky Tags is a text-based tagging tool designed to help you and your
+                            team
+                            speed up your
+                            research synthesis in FigJam. It implements a version of the synthesis-accelerating features
+                            currently available in Miro, including adding tags to sticky notes and automatically
+                            creating
+                            clusters of sticky notes by tag.</p>
+                    </div>
+                    <div class="project-links">
+                        <p>Live link: <a href="https://www.figma.com/community/plugin/1212697728465067175/Sticky-Tags"
+                                target="_blank">Figma
+                                Community Page</a></p>
+                        <p>Code: <a href="https://github.com/MargauxThw/Sticky-Tags" target="_blank">
+                                Github Repository</a></p>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Zen Den Card -->
-    <div class="card zen-den">
-      <img src="images/zenden_cover-red.svg" alt="Zen Den Preview Illustration">
-      <div class="text">
-        <h2><strong>The Zen Den</strong></h2>
-        <h6>UX Research | UX Design | Animation | Video Production</h6>
-        <p>A project looking at improving the museum experiences of Young Adults using emerging technologies.</p>
-        <a href="./case-studies/the-zen-den"><button>View Project</button></a>
-      </div>
-    </div>
+            <!-- Filtered Sticky Selector -->
+            <div class="card">
+                <div class="image" style="background-color: #F7F6FC;">
+                    <img src="images/FSS-cover.svg" alt="Filtered Sticky Selector FigJam plugin cover image">
+                </div>
+                <div class="main-panel">
+                    <!-- <div class="figjam-row">
+                        <img src="images/FigJam-icon.svg" alt="FigJam logo">
+                        <h5>FigJam Plugin</h4>
+                    </div> -->
+                    <div class="top-panel">
 
-    <!-- adLight Card -->
-    <div class="card adLight">
-      <img src="images/adLight_Logo.svg" alt="adLight Logo">
-      <div class="text">
-        <h2><strong>adLight - Smart Bike Light</strong></h2>
-        <h6>3D modelling | Interactive Product Design | Visual Design</h6>
-        <p>A physical computing project that takes care of simple bike safety so that cyclists can focus on the road.
-        </p>
-        <a href="../case-studies/adlight"><button>View Project</button></a>
-      </div>
-    </div>
+                        <div class="title-row">
+                            <img src="images/FSS-icon.png" alt="Filtered Sticky Selector FigJam plugin icon">
+                            <div class="title-col">
+                                <h5>Javascript, HTML, CSS</h5>
+                                <h4>Filtered Sticky Selector</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">Filtered Sticky Selector is a text-based selection tool designed to make
+                            it
+                            easier to filter and select sticky notes based on their content, colour and/or author. It
+                            implements the filters available in excel to remove the need to pre-filter content there
+                            before
+                            importing to FigJam. </p>
+                    </div>
+                    <div class="project-links">
+                        <p>Live link: <a
+                                href="https://www.figma.com/community/plugin/1160377045857359690/Filtered-Sticky-Selector"
+                                target="_blank">Figma
+                                Community Page</a></p>
+                        <!-- <p>How I used Excel before: <a
+                                href="https://www.figma.com/community/plugin/1212697728465067175/Sticky-Tags">Medium Article</a></p> -->
+                        <p>Code: <a href="https://github.com/MargauxThw/Filtered-Sticky-Selector" target="_blank">
+                                Github Repository</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lyrics Searcher -->
+            <div class="card">
+                <div class="image">
+                    <img src="images/lyrics-searcher-cover.svg" alt="Lyrics Searcher home page image">
+                </div>
+                <div class="main-panel">
+                    <div class="top-panel">
+
+                        <div class="title-row">
+                            <div class="title-col">
+                                <h5>Javascript, HTML, CSS</h5>
+                                <h4>Lyrics Searcher</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">I created this Taylor Swift Lyrics Searcher during covid (and at the
+                            start of
+                            the re-record hype!). It pulls lyrics from a json file that I populated by calling the
+                            genius
+                            API with python. The lyric tiles are coloured based on album art and the search experience
+                            is
+                            highly customisable.
+                            <br><br>
+                            Last month (March, 2023), the site had 1800+ visits with 2500+ searches made.</p>
+                    </div>
+                    <div class="project-links">
+                        <p>Live link: <a href="https://ts-lyrics.netlify.app" target="_blank">Taylor
+                                Swift Lyrics Searcher</a></p>
+                        <p>Usage statistics: <a href="https://ts-lyrics.goatcounter.com/" target="_blank">GoatCounter
+                                Report</a></p>
+                        <p>Code: <a href="https://github.com/MargauxThw/TS-lyrics-searcher" target="_blank">
+                                Github Repository</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lyrics Quiz -->
+            <div class="card">
+                <div class="image">
+                    <img src="images/lyrics-quiz-cover.svg" alt="Lyrics Quiz home page image">
+                </div>
+                <div class="main-panel">
+                    <div class="top-panel">
+
+                        <div class="title-row">
+                            <div class="title-col">
+                                <h5>Vue.js, HTML, CSS</h5>
+                                <h4>Lyrics Quiz</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">Suspendisse porta auctor lorem, ac tincidunt justo tincidunt porta. Donec
+                            efficitur nulla et velit molestie rhoncus.
+                            <br><br>
+                            Last month (March, 2023), 150+ quizzes were attempted on the site, on top of 90+ visits to
+                            the
+                            home page.</p>
+                    </div>
+                    <div class="project-links">
+                        <p>Live link: <a href="https://ts-lyrics-quiz.netlify.app/" target="_blank">Taylor
+                                Swift Lyrics Quiz</a></p>
+                        <p>Usage statistics: <a href="https://ts-lyrics-quiz.goatcounter.com"
+                                target="_blank">GoatCounter
+                                Report</a></p>
+                        <p>Code: <a href="https://github.com/MargauxThw/TS-lyrics-quiz" target="_blank">
+                                Github Repository</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-case-studies">
+        <h2>Design Case Studies</h2>
+        <h3>Going into the archives</h3>
+        <p>You won’t find my most recent professional UX work here just yet. However, I’ve kept these case studies from
+            my university days on here in case you’re a current student looking for ✨inspo✨</p>
+
+        <div class="card-list">
+
+            <!-- Zen Den -->
+            <div class="card">
+                <div class="image" style="background-color: #BB261A;">
+                    <img src="images/Zenden_cover.png" alt="zhezhi and people on red background">
+                </div>
+                <div class="main-panel">
+                    <div class="top-panel">
+
+                        <div class="title-row">
+                            <div class="title-col">
+                                <h5>UX Research, UX Design, Journey Mapping, Animation</h5>
+                                <h4>The Zen Den</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">A project looking at improving the museum experiences of Young Adults
+                            using
+                            emerging technologies.</p>
+                    </div>
+                    <div class="project-links">
+                        <button onclick="window.location.href='/case-studies/the-zen-den'">Read Case Study</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- adLight -->
+            <div class="card">
+                <div class="image" style="background-color: #449798;">
+                    <img src="images/adLight_cover.png" alt="white bike on green background">
+                </div>
+                <div class="main-panel">
+                    <div class="top-panel">
+
+                        <div class="title-row">
+                            <div class="title-col">
+                                <h5>3D modelling, Product Design, Visual Design</h5>
+                                <h4>adLight - Smart Bike Light</h4>
+                            </div>
+                        </div>
+                        <p class="project-bio">A physical computing project that takes care of simple bike safety so
+                            that cyclists can focus on the road.</p>
+                    </div>
+                    <div class="project-links">
+                        <button onclick="window.location.href='/case-studies/adlight'">Read Case Study</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <h3>Who am I?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat turpis ut porttitor facilisis.
+            Maecenas a lorem lacus. Nullam eu est massa. Quisque vel egestas urna. Aenean vestibulum vitae libero eget
+            ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            <br><br>
+            Suspendisse porta auctor lorem, ac tincidunt justo tincidunt porta. Donec efficitur nulla et velit molestie
+            rhoncus. Aliquam rhoncus quam at ligula euismod, eu euismod tortor pulvinar. Vivamus dui nisi, hendrerit
+            vitae augue vel, porttitor sodales sem.</p>
+
+        <div id="social-links">
+
+        </div>
+    </section>
 
     <footer>
-      <p style="padding-top: 2%">Designed and coded by Margaux Thwaites - 2020</p>
+        <p>🍿 Designed and <a href="https://github.com/MargauxThw/margauxthw.github.io" target="_blank">coded</a> by Margaux Thwaites | Last updated: <strong>April 2023</strong></p>
     </footer>
 
-  </div>
-
-  <!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
