@@ -187,6 +187,7 @@ button:hover {
 
 .image {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     /* flex-grow: 10; */
@@ -202,22 +203,21 @@ button:hover {
 }
 
 .figjam-row {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
-    color: #8A2BE2;
+    gap: 16px;
+    background-color: #892EFF;
+    color: white;
     /* border-bottom: 2px solid black; */
 
 }
 
-.figjam-row h5 {
-    margin: 0;
-}
 
 .figjam-row img {
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 36px;
+    max-height: 36px;
     border: none;
     /* border-right: 2px solid black; */
 }
