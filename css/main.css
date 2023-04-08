@@ -288,6 +288,10 @@ footer a {
     font-weight: 600;
 }
 
+.square-btn {
+    padding: 14px 14px 10px;
+}
+
 .case-img {
     width: 80%;
     height: auto;
